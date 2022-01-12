@@ -9,22 +9,24 @@ import React from 'react';
 import { ConnectedUsernameDisplay } from './UsernameDisplay'
 import * as mutations from '../store/mutations';
 
+
 const Navigation = ({id, authenticated})=>(
     <div className="header">
         <Link to="/dashboard">
-            <h1>
-                My Application
-            </h1>
+            <h2>
+                name of guild master update
+            </h2>
         </Link>
 
         { authenticated ?
             <h4>
-                Welcome, <ConnectedUsernameDisplay id={id}/>!
+                Hello, <ConnectedUsernameDisplay id={id}/>!
             </h4>
             : null
         }
     </div>
 );
+
 
 const mapStateToProps = ({session})=>({
     id:session.id,

@@ -18,7 +18,7 @@ const LoginComponent = ({authenticateUser,authenticated})=>(
             </Link>
         </h3>
         <form onSubmit={authenticateUser}>
-            <input type="text" placeholder="username" name="username" defaultValue="Dev" className="form-control"/>
+            <input type="text" placeholder="username" name="username" defaultValue="new world account name" className="form-control"/>
             <input type="password" placeholder="password" name="password" defaultValue="TUPLES" className="form-control mt-2"/>
             {authenticated === mutations.NOT_AUTHENTICATED ?
                 <p>
